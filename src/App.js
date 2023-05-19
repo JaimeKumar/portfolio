@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Link from './Link';
+import { v4 as uuidv4 } from 'uuid';
+import trackLogo from './track-logo.png'
+import cryptickleLogo from './cryptickle-logo.png'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="title">
+        Jaime Kumar Portfolio
+      </div>
+
+      <div className="flexList">
+        <div className="row">
+          <Link id={uuidv4()} link='https://funny-empanada-4680e6.netlify.app/' logo={trackLogo} title='Track' />
+          <Link id={uuidv4()} link='https://scintillating-tulumba-084a2f.netlify.app/' logo={cryptickleLogo} title='Cryptickle' />
+        </div>
+      </div>
     </div>
   );
 }
