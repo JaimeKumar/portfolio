@@ -57,7 +57,17 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-  .row {
+  /* .row {
     flex-direction: column;
+  } */
+
+  .logo {
+    width: 100px;
+  }
+
+  .logo img {
+    padding: 20px;
+    height: 50px;
+    max-width: 100px;
   }
 }
