@@ -37,7 +37,7 @@ html, body, #root, .App {
   flex-direction: column;
   border-radius: 10px;
   margin: 0 40px 0 40px;
-  width: 250px;
+  width: 200px;
 }
 
 .logo:hover {
@@ -46,8 +46,8 @@ html, body, #root, .App {
 
 .logo img {
   padding: 20px;
-  height: 150px;
-  max-width: 200px;
+  height: 100px;
+  max-width: 150px;
 }
 
 a {
