@@ -70,4 +70,8 @@ a {
     height: 50px;
     max-width: 100px;
   }
+
+  a {
+    font-size: 1rem;
+  }
 }
