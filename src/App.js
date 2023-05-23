@@ -3,7 +3,7 @@ import Link from './Link';
 import { v4 as uuidv4 } from 'uuid';
 import trackLogo from './track-logo.png'
 import cryptickleLogo from './cryptickle-logo.png'
-import togoLogo from './todoLogo.png'
+import todoLogo from './todoLogo.png'
 
 function App() {
   return (
