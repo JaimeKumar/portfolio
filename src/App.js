@@ -8,7 +8,7 @@ import htmlLogo from './html-logo.png';
 import cssLogo from './css-logo.png';
 import jsLogo from './js-logo.png';
 import reactLogo from './react-logo.png';
-import pythonLogo from './python-logo.avif';
+import pythonLogo from './python-logo.png';
 import nodeLogo from './node-logo.png';
 import gitLogo from './git-logo.png';
 import linkedinLogo from './linkedin-logo.png';
