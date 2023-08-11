@@ -186,7 +186,7 @@ function App() {
           
           <p>
             <i class="fa fa-phone"></i>
-            <a href="tel:07824 539 722">+44 7824 539 722</a>
+            <a href="tel:+447824539722">+44 7824 539 722</a>
           </p>
         </div>
       </div>

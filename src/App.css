@@ -46,7 +46,7 @@
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
-  left: 40px;
+  left: 5vw;
   top: 50%;
   transform: translateY(-50%);
   display: none;
@@ -94,15 +94,17 @@ li:hover::after {
 .sideMenu {
   position: absolute;
   display: none;
-  left: -100px;
+  left: -120px;
   top: 0;
-  width: 100px;
-  height: 100%;
+  width: 120px;
+  height: 100vh;
+  height: 100svh;
   background-color: #f2f4f7;
 }
 
 .sideMenu ul {
-  margin-top: 30px;
+  margin-left: 15px;
+  margin-bottom: 30px;
 }
 
 .sideMenu li {
