@@ -73,11 +73,11 @@ function App() {
   }
 
   function link(where) {
-    $(`#${where}`)[0].scrollIntoView();
+    $(`#${where}`)[0].scrollIntoView({behavior: "smooth", block: "start"});
   }
 
   function showSideMenu() {
-    $('.App').css('transform', `translateX(${sideOpen?100:0}px)`)
+    $('.App').css('transform', `translateX(${sideOpen?120:0}px)`)
     setSide(p => !p)
   }
   
@@ -86,13 +86,13 @@ function App() {
       <div className="sideMenu">
         <div className="menuSticky">
           <ul>
-            <li onClick={() => {link('about')}}>
+            <li onClick={() => {link('about'); showSideMenu();}}>
               About
             </li>
-            <li onClick={() => {link('projects')}}>
+            <li onClick={() => {link('projects'); showSideMenu();}}>
               Projects
             </li>
-            <li onClick={() => {link('contact')}}>
+            <li onClick={() => {link('contact'); showSideMenu();}}>
               Contact
             </li>
           </ul>
