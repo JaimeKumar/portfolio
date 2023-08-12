@@ -290,6 +290,10 @@ li:hover::after {
   color: #000;
 }
 
+.dlcv {
+  height: 20px;
+}
+
 @media only screen and (max-width: 840px) {
   #centerCont {
     flex-direction: column-reverse;

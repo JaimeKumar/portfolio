@@ -18,6 +18,7 @@ import pastebrush from './pastebrush.png'
 import cryptickle from './cryptickle.png'
 import track from './track.png'
 import eglantine from './eglantine.png'
+import dlcv from './dlcv.png'
 import { useState } from 'react';
 
 const projects = [
@@ -179,6 +180,12 @@ function App() {
         <br />
 
         <div className="contactBlock">
+          <p>
+            {/* <i class="fa fa-file-arrow-down"></i> */}
+            <img src={dlcv} alt="download cv" className='dlcv'/>
+            
+            <a href="Jaime-Kumar-CV.pdf" download={'Jaime-Kumar-CV.pdf'}>Download CV</a>
+          </p>
           <p>
             <i class="fa fa-envelope"></i>
             <a href = "mailto: jaime.kumar@hotmail.com">jaime.kumar@hotmail.com</a>
