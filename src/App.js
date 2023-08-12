@@ -73,7 +73,8 @@ function App() {
   }
 
   function link(where) {
-    $(`#${where}`)[0].scrollIntoView({behavior: "smooth", block: "start"});
+    let y = $(`#${where}`)[0].getBoundingClientRect().top + window.scrollY - 90;
+    window.scrollTo({top: y, behavior: "smooth"});
   }
 
   function showSideMenu() {
@@ -86,11 +87,11 @@ function App() {
       <div className="sideMenu">
         <div className="menuSticky">
           <ul>
-            <li onClick={() => {link('about'); showSideMenu();}}>
-              About
-            </li>
             <li onClick={() => {link('projects'); showSideMenu();}}>
               Projects
+            </li>
+            <li onClick={() => {link('about'); showSideMenu();}}>
+              About
             </li>
             <li onClick={() => {link('contact'); showSideMenu();}}>
               Contact
@@ -106,11 +107,11 @@ function App() {
         </div>
         <h1 onClick={() => {link('home')}}>jaimekumar.uk</h1>
         <ul>
-          <li onClick={() => {link('about')}}>
-            About
-          </li>
           <li onClick={() => {link('projects')}}>
             Projects
+          </li>
+          <li onClick={() => {link('about')}}>
+            About
           </li>
           <li onClick={() => {link('contact')}}>
             Contact

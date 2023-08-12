@@ -124,7 +124,6 @@ li {
 .page {
   min-height: calc(100% - 100px);
   min-height: calc(100svh - 100px);
-  /* width: 100%; */
   display: flex;
   align-items: center;
   justify-content: center;
