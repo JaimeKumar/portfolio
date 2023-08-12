@@ -25,6 +25,8 @@
 
 #nav {
   position: sticky;
+  position: -webkit-sticky;
+
   top: 0;
   height: 100px;
   /* width: var(--cWidth); */
@@ -97,9 +99,16 @@ li:hover::after {
   left: -120px;
   top: 0;
   width: 120px;
+  height: 100%;
+  background-color: #f2f4f7;
+}
+
+.menuSticky {
+  position: sticky;
+  position: -webkit-sticky;
   height: 100vh;
   height: 100svh;
-  background-color: #f2f4f7;
+  top: 0;
 }
 
 .sideMenu ul {
@@ -276,16 +285,18 @@ li:hover::after {
 
 .contactBlock {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 15px;
 }
 
 .contactBlock p {
   display: flex;
   column-gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .contactBlock a {
+  display: flex;
+  column-gap: 15px;
   text-decoration: none;
   color: #000;
 }

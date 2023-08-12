@@ -84,17 +84,19 @@ function App() {
   return (
     <div className="App">
       <div className="sideMenu">
-        <ul>
-          <li onClick={() => {link('about')}}>
-            About
-          </li>
-          <li onClick={() => {link('projects')}}>
-            Projects
-          </li>
-          <li onClick={() => {link('contact')}}>
-            Contact
-          </li>
-        </ul>
+        <div className="menuSticky">
+          <ul>
+            <li onClick={() => {link('about')}}>
+              About
+            </li>
+            <li onClick={() => {link('projects')}}>
+              Projects
+            </li>
+            <li onClick={() => {link('contact')}}>
+              Contact
+            </li>
+          </ul>
+        </div>
       </div>
       <div id="nav">
         <div className="menu" onClick={showSideMenu}>
@@ -181,19 +183,23 @@ function App() {
 
         <div className="contactBlock">
           <p>
-            {/* <i class="fa fa-file-arrow-down"></i> */}
-            <img src={dlcv} alt="download cv" className='dlcv'/>
-            
-            <a href="Jaime-Kumar-CV.pdf" download={'Jaime-Kumar-CV.pdf'}>Download CV</a>
+            <a href="Jaime-Kumar-CV.pdf" download={'Jaime-Kumar-CV.pdf'}>
+              <img src={dlcv} alt="download cv" className='dlcv'/>
+              Download CV
+            </a>
           </p>
           <p>
-            <i class="fa fa-envelope"></i>
-            <a href = "mailto: jaime.kumar@hotmail.com">jaime.kumar@hotmail.com</a>
+            <a href = "mailto: jaime.kumar@hotmail.com">
+              <i class="fa fa-envelope"></i>
+              jaime.kumar@hotmail.com
+            </a>
           </p>
           
           <p>
-            <i class="fa fa-phone"></i>
-            <a href="tel:+447824539722">+44 7824 539 722</a>
+            <a href="tel:+447824539722">
+              <i class="fa fa-phone"></i>
+              +44 7824 539 722
+            </a>
           </p>
         </div>
       </div>
