@@ -19,9 +19,16 @@ import cryptickle from './cryptickle.png'
 import track from './track.png'
 import eglantine from './eglantine.png'
 import dlcv from './dlcv.png'
+import ch from './caratHaus.png'
 import { useState } from 'react';
 
 const projects = [
+  {
+    title: 'Carat Haus',
+    url: 'https://carathaus.co.uk/',
+    img: ch,
+    description: 'I was commissioned to build a website for a new jewellery company on which users could browse the company’s collections and book consultations. Using a MongoDB database to store consultation appointments and a node server to process requests, users can pick the date and time for their appointment depending on what time-slots are available. The site also has an admin login for the client to view all appointments. From the appointments list, the client can call the customer directly, email them or delete the booking. We plan to implement an online store in the near future once there is demand.'
+  },
   {
     title: 'Eglantine',
     url: 'https://eglantine.netlify.app/',
@@ -184,7 +191,7 @@ function App() {
 
         <div className="contactBlock">
           <p>
-            <a href="Jaime-Kumar-CV.pdf" download={'Jaime-Kumar-CV.pdf'}>
+            <a href="Jaime-Kumar-CV-2.pdf" download={'Jaime-Kumar-CV-2.pdf'}>
               <img src={dlcv} alt="download cv" className='dlcv'/>
               Download CV
             </a>
