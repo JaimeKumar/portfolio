@@ -156,9 +156,9 @@ function App() {
                 <span className='stackSpan' id='pythonSpan'>Python</span>
               </div>
               <div id="divider"></div>
-              <a href="https://github.com/JaimeKumar/">
+              {/* <a href="https://github.com/JaimeKumar/">
                 <img src={gitLogo} alt="git" />
-              </a>
+              </a> */}
               <a href="https://www.linkedin.com/in/jaime-kumar-20a68a269/">
                 <img src={linkedinLogo} alt="linked in" />
               </a>
@@ -191,7 +191,7 @@ function App() {
 
         <div className="contactBlock">
           <p>
-            <a href="Jaime-Kumar-CV-2.pdf" download={'Jaime-Kumar-CV-2.pdf'}>
+            <a href="Jaime-Kumar-CV.pdf" download={'Jaime-Kumar-CV.pdf'}>
               <img src={dlcv} alt="download cv" className='dlcv'/>
               Download CV
             </a>
