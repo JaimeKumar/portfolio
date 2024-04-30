@@ -158,8 +158,8 @@ li {
 
 #centerText > h1 {
   font-size: clamp(1.8rem, 2vw, 2.25rem);
-  white-space: nowrap;
-  text-align: center;
+  /* white-space: nowrap; */
+  /* text-align: center; */
   border: none;
 }
 
@@ -196,6 +196,7 @@ li {
   bottom: -20px;
   transition: 0.6s;
   opacity: 0;
+  white-space: nowrap;
 }
 
 .spanShow {
@@ -304,6 +305,14 @@ li {
   height: 20px;
 }
 
+.musicProjs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-top: 25px;
+}
+
 @media only screen and (max-width: 840px) {
   #centerCont {
     flex-direction: column-reverse;
@@ -342,10 +351,10 @@ li {
 } 
 
 @media only screen and (max-width: 500px) {
-  #centerText > h1 {
+  /* #centerText > h1 {
     white-space:normal;
     text-align: left;
-  }
+  } */
 
   #stackIcons {
     column-gap: clamp(5px, 2vw, 1000px);
